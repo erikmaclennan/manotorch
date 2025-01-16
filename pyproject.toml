@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manotorch"
+version = "0.0.2"
+authors = [
+    { name = "Lixin Yang", email = "siriusyang@sjtu.edu.cn" },
+]
+description = "MANO pyTORCH"
+readme = "README.md"
+requires-python = ">=3.7.0"
+license = { text = "GNU GENERAL PUBLIC LICENSE" }
+urls = { homepage = "https://github.com/lixiny/manotorch" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU GENERAL PUBLIC LICENSE",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "matplotlib",
+    "torch",
+    "tqdm",
+    "numpy",
+    "opencv-python",
+    "opencv-contrib-python",
+    "scipy",
+    "trimesh",
+    "pyvista",
+    "deprecation",
+    "open3d",
+    "chumpy @ git+https://github.com/mattloper/chumpy.git",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
