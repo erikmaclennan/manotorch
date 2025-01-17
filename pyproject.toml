@@ -30,7 +30,7 @@ dependencies = [
     "pyvista",
     "deprecation",
     "open3d",
-    "chumpy @ git+https://github.com/mattloper/chumpy.git",
+    "chumpy @ git+https://github.com/erikmaclennan/chumpy.git",
 ]
 
 [tool.setuptools]
